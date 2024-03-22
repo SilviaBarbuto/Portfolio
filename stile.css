@@ -1,0 +1,535 @@
+User
+body, html{
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden; /*previene la barra di scorrimento orizzontale*/
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .button, button, .button-link {
+      padding: 12px 24px;
+      font-size: 14px;
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  }
+  
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FDF0F0;
+    color: #132043;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h1 {
+    border: 2px solid #1F4172; /* Spessore e colore del bordo */
+    border-radius: 10px; /* Raggio dell'angolo arrotondato */
+    background-color: transparent; /* Sfondo trasparente */
+    color: #132043; /* Colore del testo */
+    padding: 10px; /* Spazio tra il testo e il bordo del riquadro */
+    display: inline-block; /* Rende il riquadro adattabile al contenuto */
+}
+
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 1000; /* Assicura che l'header e il footer siano sopra agli altri elementi */
+}
+
+header {
+    top: 0;
+    border-bottom: 2px solid #132043;
+    padding: 30px;
+}
+
+footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    bottom: 0;
+    border-top: 2px solid #132043;
+    position: relative; /* Cambiato in fixed per mantenerlo sempre visibile in basso */
+}
+
+
+section {
+    min-height: 60vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
+    padding: 50px; /* Aggiungi del padding per estetica */
+    /* Altri stili qui */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #132043;
+    padding: 10px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #F1B4BB;
+    border-top: 2px solid #F1B4BB;
+    border-bottom: 2px solid #F1B4BB;
+    font-weight: 700;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    flex-direction: row-reverse; /* Inverte l'ordine: immagine a destra, testo a sinistra */
+    margin: 60px 20px 20px; /* Aumenta il margine superiore per non sovrapporsi all'header */
+   
+}
+
+.content img {
+    border-radius: 50%;
+    width: 250px; /* Ridimensiona secondo necessità */
+    height: 250px;
+    border: 4px solid #1F4172;
+    margin-left: 50px;
+    object-fit: cover;
+}
+
+.content div, .about-text {
+    text-align: left;
+    text-align: justify;
+}
+
+.button, button, .button-link{
+    padding: 1em 2em;
+    font-size: 1rem;
+}
+
+.button, button {
+    background-color: #F1B4BB;
+    color: #1F4172;
+    border: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px; /* bordi arrotondati*/
+}
+
+.button:hover, button:hover, .button-link:hover {
+    background-color: #1F4172;
+    color: #F1B4BB;
+    font-weight: 700;
+    border-radius: 20px; /* assicurarsi che hover mantenga bordi arrotondati*/
+}
+
+/* Media query per schermi fino a 768px di larghezza */
+@media (max-width: 768px) {
+    .button, button, .button-link {
+        padding: 10px 20px; /* Riduci il padding */
+        font-size: 1rem; /* Riduci la dimensione del font */
+        margin-top: 15px; /* Riduci il margine superiore */
+    }
+}
+
+/* Media query per schermi molto piccoli, es. smartphone */
+@media (max-width: 480px) {
+    .button, button, .button-link {
+        width: 100%; /* Fai occupare al bottone l'intera larghezza del contenitore */
+        padding: 0.5em; /* Ulteriore riduzione del padding */
+        font-size: 0.8rem; /* Ulteriore riduzione della dimensione del font */
+        margin-top: 10px; /* Ulteriore riduzione del margine superiore */
+    }
+}
+
+.button-link {
+    background-color: #F1B4BB;
+    color: #1F4172;
+    border: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 20px; /* bordi arrotondati*/
+}
+
+.button-link:hover, button:hover{
+    background-color: #1F4172;
+    color: #F1B4BB;
+    font-weight: 700;
+    border-radius: 20px; /* assicurarsi che hover mantenga bordi arrotondati*/
+}
+
+
+.wave-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.wave-container svg{
+    display:block;
+    width: 100vw;
+    height: auto;
+    margin-top: -150px;
+}
+
+.wave-container1 {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: -70px;
+}
+.wave-container1 svg{
+    display:block;
+    width: 100vw;
+    height: auto;
+    margin-top: 20px;
+}
+
+.wave-container2 {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom:-200px;
+}
+.wave-container2 svg{
+    display:block;
+    width: 100vw;
+    height: auto;
+    margin-top: 20px;
+}
+
+.about{
+    margin-bottom: -150px;
+}
+
+.about-main{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#portfolio {
+    text-align: center; /* Centra il testo della sezione */
+    margin: auto;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra le icone orizzontalmente */
+    gap: 20px; /* Distanza tra le icone */
+    margin-top: 20px; /* Spazio tra il testo e le icone */
+}
+
+.social-icons a img {
+    width: 50px; /* Imposta la larghezza delle icone */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+.social-icons a img[alt="start2impact"] {
+    width: 200px; /* Aumenta la larghezza */
+    height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
+}
+
+
+.portfolio{
+    margin-top: -50px;
+}
+
+.portfolio-item p a {
+    text-decoration: none; /* Rimuove il sottolineamento */
+    color: inherit; /* Opzionale: fa sì che il link utilizzi il colore del testo circostante */
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border: 2.5px solid #F1B4BB;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    margin-top:10px;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .project-description {
+    opacity: 1;
+}
+
+.project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    list-style-type: none;
+}
+
+.footer-links li{
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #132043;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    color: #F1B4BB;
+}
+
+
+/* Aggiunta per il layout delle pagine specifiche */
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px; /* Per non sovrapporsi all'header */
+    background-color: rgba(241, 180, 187, 0.5); /* Rosa trasparente */
+    backdrop-filter: blur(10px); /* Effetto sfocatura per il vetro */
+    -webkit-backdrop-filter: blur(10px); /* Per il supporto su Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Opzionale: bordo per migliorare l'effetto vetro */
+
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.portfolio-item p {
+    font-family: 'Merriweather', serif; /* Imposta Merriweather come font */
+}
+
+
+/*Stili per griglia ABOUT*/
+
+.about-section{
+    display: flex;
+    gap:20px;
+    align-items: flex-start;
+}
+
+.skills-container{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.about-content, .skills-content{
+    flex:1;
+}
+
+.hard-skills h3, .soft-skills h3{
+    text-align: left;
+    margin-left: 35px;
+}
+
+.skill-list{
+    padding-left: 20px;
+}
+
+.hard-skills, .soft-skills{
+   display: flex;
+   flex-direction: column;
+}
+
+.skills-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Stili specifici per la pagina Contact */
+
+/* Assicurati che il form e tutti i suoi campi siano disposti in colonna */
+form.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Allinea gli elementi a sinistra */
+}
+
+/* Stile per i campi input e textarea per garantire che occupino l'intera larghezza disponibile */
+form.content input,
+form.content textarea {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore del form */
+    margin-bottom: 10px; /* Aggiunge un po' di margine sotto ogni campo per spaziarli */
+}
+
+/* Assicurati che il bottone non sia allargato come gli input/textarea */
+form.content button {
+    width: auto; /* O un valore specifico se preferisci */
+    margin-top: 20px; /* Aggiunge spazio sopra il bottone */
+}
+
+
+.content-div, .info{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: -90px;
+
+}
+.contact-form .form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Regola questa larghezza secondo necessità */
+    margin-bottom: 20px;
+    margin: 0 auto; /* Centra il form */
+}
+@media (max-width: 768px) {
+    .contact-form {
+        width: 95%; /* Larghezza maggiore per schermi più piccoli */
+    }
+}
+
+.contact-form label{
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #132043;
+    background-color: #FDF0F0;
+    color: #132043;
+}
+
+.contact-form button {
+    width: auto;
+    padding: 10px 20px;
+}
+
+.contact-form button:hover {
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    .button, button, .button-link {
+        padding: 0.75em 1.5em; /* Riduci il padding */
+        font-size: 0.9rem; /* Riduci la dimensione del testo */
+    }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+  }
+  
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F1B4BB; /* Colore di sfondo */
+    color: #FFFFFF; /* Colore della freccia */
+    padding: 10px; /* Spazio intorno alla freccia */
+    border-radius: 50%; /* Rende il bottone circolare */
+    text-decoration: none; /* Rimuove il sottolineato dal link */
+    font-size: 24px; /* Dimensione della freccia */
+    display: none; /* Nasconde il bottone di default */
+    z-index: 1500;
+}
+
+  
