@@ -32,8 +32,10 @@ h3 {
 </head>
 <body>
     <header>
+
+    <button class="hamburger-menu">☰</button>
         <nav>
-            <ul>
+            <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -60,7 +62,7 @@ h3 {
              <br>
 
             <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:3bee0f3f-248d-40a4-953a-d2ddbd7852e1" target="_blank" class="button-link">Download CV</a>
-            <a href="contact.html" class="button-link">Contattami</a>
+            <a href="#contact" class="button-link">Contattami</a>
         </div>
     </div>
     </section>
@@ -302,6 +304,19 @@ h3 {
     });
     </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector(".hamburger-menu").addEventListener("click", function() {
+            var navbar = document.querySelector("nav ul");
+            if (navbar.style.display === "block") {
+                navbar.style.display = "none";
+            } else {
+                navbar.style.display = "block";
+            }
+        });
+    });
+    </script>
+    
 
 </body>
 </html>

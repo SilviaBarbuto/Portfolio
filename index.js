@@ -20,8 +20,14 @@ emailjs.send(serviceID,templateID,params)
     .catch((err) => console.log(err));
 }
 
-document.querySelector('.hamburger-menu').addEventListener('click', () => {
-    const navUL = document.querySelector('nav ul');
-    navUL.style.display = navUL.style.display === 'block' ? 'none' : 'block';
-  });
-  
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        var navbar = document.getElementById('navbar');
+        if (navbar.style.display === 'block') {
+            navbar.style.display = 'none';
+        } else {
+            navbar.style.display = 'block';
+        }
+    });
+});
+
