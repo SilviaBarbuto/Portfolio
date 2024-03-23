@@ -21,6 +21,7 @@ h3 {
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+
 <script type="text/javascript">
    (function(){
       emailjs.init({
@@ -30,23 +31,42 @@ h3 {
 </script>
 
 </head>
+
 <body>
     <header>
 
-    <button class="hamburger-menu">☰</button>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
         <nav>
-            <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="navbar">
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
+
+        <script>
+            function showSidebar(){
+                    const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+            }
+        </script>
+
     </header>
    
     <a href="#" class="back-to-top">↑</a>
-
-        
     </div>
     
     <section id="home" class="fade-in-section">
@@ -181,7 +201,7 @@ h3 {
             </div>
             <div class="portfolio-item">
                 <img src="assets/discovery2.png" alt="Progetto di Discovery - Parte 2">
-                <p><strong><a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:0700661d-8ec8-40b6-a141-bda0d951d50c" target="_blank">Progetto di Discovery - parte 2</a></strong>></p>
+                <p><strong><a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:0700661d-8ec8-40b6-a141-bda0d951d50c" target="_blank">Progetto di Discovery - parte 2 </a></strong></p>
             </div>
             <div class="portfolio-item">
                 <img src="assets/accessibilità2.png" alt="Progetto di Accessibilità">
@@ -317,6 +337,5 @@ h3 {
     });
     </script>
     
-
 </body>
 </html>

@@ -6,6 +6,35 @@ body, html{
     overflow-x: hidden; /*previene la barra di scorrimento orizzontale*/
 }
 
+/*media query responsive*/
+
+/* Stili base qui */
+
+@media (max-width: 600px) {
+    /* Stili per dispositivi con larghezza fino a 600px */
+    body {
+        font-size: 14px;
+    }
+    .content, .sidebar, .button, button, .button-link {
+        /* Aggiungi qui gli stili specifici per mobile */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Stili per dispositivi con larghezza da 601px a 1024px */
+    .content, .sidebar, .button, button, .button-link {
+        /* Aggiungi qui gli stili specifici per tablet */
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Stili per dispositivi con larghezza superiore a 1024px */
+    .content, .sidebar, .button, button, .button-link {
+        /* Aggiungi qui gli stili specifici per desktop */
+    }
+}
+
+
 .container {
     width: 80%;
     max-width: 1200px;
@@ -16,8 +45,6 @@ body, html{
     max-width: 100%;
     height: auto;
   }
-
-  
 
 body {
     font-family: 'Lato', sans-serif;
@@ -148,7 +175,7 @@ ul {
         width: 100%;
     }
 }
-
+/*fine side bar*/
 
 
 .content {
@@ -177,7 +204,20 @@ ul {
 
 .button, button, .button-link{
     padding: 1em 2em;
+    margin-bottom: 10px;
     font-size: 1rem;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .button, .button-link {
+        padding: 10px 20px; /* Riduci lo spazio interno per rendere i bottoni più piccoli */
+        font-size: 0.8rem; /* Riduci la dimensione del testo */
+        display: block; /* I bottoni saranno disposti uno sotto l'altro */
+        width: 100%; /* I bottoni occupano l'intera larghezza del contenitore */
+        margin-bottom: 15px; /* Aumenta lo spazio tra i bottoni */
+        text-align: center;
+    }
 }
 
 .button, button {
@@ -223,6 +263,7 @@ ul {
 
 .wave-container {
     width: 100vw;
+    overflow: hidden;
     position: relative;
     left: 50%;
     right: 50%;
@@ -234,11 +275,11 @@ ul {
     display:block;
     width: 100vw;
     height: auto;
-    margin-top: -150px;
 }
 
 .wave-container1 {
     width: 100vw;
+    overflow: hidden;
     position: relative;
     left: 50%;
     right: 50%;
@@ -255,6 +296,7 @@ ul {
 
 .wave-container2 {
     width: 100vw;
+    overflow: hidden;
     position: relative;
     left: 50%;
     right: 50%;
@@ -282,6 +324,12 @@ ul {
     text-align: center; /* Centra il testo della sezione */
     margin: auto;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    #portfolio {
+        margin-top: 80px; /* Aggiunge spazio in più sopra la sezione portfolio */
+    }
 }
 
 .social-icons {
@@ -490,6 +538,7 @@ form.content button {
     border: 1px solid #132043;
     background-color: #FDF0F0;
     color: #132043;
+    font-size: 20px;
 }
 
 .contact-form button {
@@ -516,20 +565,14 @@ form.content button {
 
   .back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 24px;
+    right: 24px;
     background-color: #F1B4BB; /* Colore di sfondo */
     color: #FFFFFF; /* Colore della freccia */
-    padding: 10px; /* Spazio intorno alla freccia */
-    border-radius: 50%; /* Rende il bottone circolare */
+    padding: 15px; /* Spazio intorno alla freccia */
+    border-radius: 40%; /* Rende il bottone circolare */
     text-decoration: none; /* Rimuove il sottolineato dal link */
-    font-size: 24px; /* Dimensione della freccia */
+    font-size: 32px; /* Dimensione della freccia */
     display: none; /* Nasconde il bottone di default */
     z-index: 1500;
 }
-
-
-
-
-
-  
