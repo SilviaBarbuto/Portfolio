@@ -17,34 +17,6 @@ body, html{
     height: auto;
   }
 
-  @media (max-width: 768px) {
-    .container {
-      width: 95%;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-  
-    .button, button, .button-link {
-      padding: 12px 24px;
-      font-size: 14px;
-    }
-  }
-
-  .hamburger-menu {
-    display: none;
-  }
-  
-  @media (max-width: 768px) {
-    .hamburger-menu {
-      display: block;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  }
   
 
 body {
@@ -123,6 +95,60 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
+/*Nav SideBar*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #f1b4bb37;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    font-weight: 800;
+    color: #132043;
+    padding: 10px;
+}
+
+.sidebar li{
+    width: 100%;
+    text-decoration: none;
+    color: #132043;
+}
+
+.sidebar a{
+    width: 100%;
+    text-decoration: none;
+    color: #132043;
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
 
 
 .content {
@@ -173,24 +199,6 @@ nav ul li a:hover {
     border-radius: 20px; /* assicurarsi che hover mantenga bordi arrotondati*/
 }
 
-/* Media query per schermi fino a 768px di larghezza */
-@media (max-width: 768px) {
-    .button, button, .button-link {
-        padding: 10px 20px; /* Riduci il padding */
-        font-size: 1rem; /* Riduci la dimensione del font */
-        margin-top: 15px; /* Riduci il margine superiore */
-    }
-}
-
-/* Media query per schermi molto piccoli, es. smartphone */
-@media (max-width: 480px) {
-    .button, button, .button-link {
-        width: 100%; /* Fai occupare al bottone l'intera larghezza del contenitore */
-        padding: 0.5em; /* Ulteriore riduzione del padding */
-        font-size: 0.8rem; /* Ulteriore riduzione della dimensione del font */
-        margin-top: 10px; /* Ulteriore riduzione del margine superiore */
-    }
-}
 
 .button-link {
     background-color: #F1B4BB;
@@ -465,11 +473,6 @@ form.content button {
     margin-bottom: 20px;
     margin: 0 auto; /* Centra il form */
 }
-@media (max-width: 768px) {
-    .contact-form {
-        width: 95%; /* Larghezza maggiore per schermi più piccoli */
-    }
-}
 
 .contact-form label{
     margin-bottom: 5px;
@@ -499,13 +502,6 @@ form.content button {
 }
 
 
-@media (max-width: 768px) {
-    .button, button, .button-link {
-        padding: 0.75em 1.5em; /* Riduci il padding */
-        font-size: 0.9rem; /* Riduci la dimensione del testo */
-    }
-}
-
 .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
@@ -531,5 +527,9 @@ form.content button {
     display: none; /* Nasconde il bottone di default */
     z-index: 1500;
 }
+
+
+
+
 
   
