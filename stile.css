@@ -283,7 +283,7 @@ ul {
     display:block;
     width: 100vw;
     height: auto;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .about{
@@ -567,7 +567,7 @@ form.content button {
 
 @media (max-width: 767px) {
     #contact {
-        margin-top: 80px; /* Aggiunge spazio in più sopra la sezione contact */
+        margin-top: 40px; /* Aggiunge spazio in più sopra la sezione contact */
     }
 }
 
