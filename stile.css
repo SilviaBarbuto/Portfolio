@@ -261,7 +261,7 @@ ul {
 }
 
 
-.wave-container {
+.wave-container{
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -418,33 +418,6 @@ ul {
     color: #F1B4BB;
 }
 
-
-/* Aggiunta per il layout delle pagine specifiche */
-
-.portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin-top: 100px; /* Per non sovrapporsi all'header */
-    background-color: rgba(241, 180, 187, 0.5); /* Rosa trasparente */
-    backdrop-filter: blur(10px); /* Effetto sfocatura per il vetro */
-    -webkit-backdrop-filter: blur(10px); /* Per il supporto su Safari */
-    border: 1px solid rgba(255, 255, 255, 0.18); /* Opzionale: bordo per migliorare l'effetto vetro */
-
-}
-
-.portfolio-item {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
-.portfolio-item p {
-    font-family: 'Merriweather', serif; /* Imposta Merriweather come font */
-}
-
-
 /*Stili per griglia ABOUT*/
 
 .about-section{
@@ -481,6 +454,38 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+/* Aggiunta per il layout delle pagine specifiche */
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 60px; /* Per non sovrapporsi all'header */
+    background-color: rgba(241, 180, 187, 0.311); /* Rosa trasparente */
+    backdrop-filter: blur(10px); /* Effetto sfocatura per il vetro */
+    -webkit-backdrop-filter: blur(10px); /* Per il supporto su Safari */
+    border: 1px solid rgba(255, 255, 255, 0.203); /* Opzionale: bordo per migliorare l'effetto vetro */
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.portfolio-item p {
+    font-family: 'Merriweather', serif; /* Imposta Merriweather come font */
+    font-size: 16px; /*dimensione predefinita del testo*/
+    margin: 10px 0; /*margine sopra e sotto per separare il testo dalle immagini*/
+}
+@media (max-width: 768px) {
+    .portfolio-item p {
+        font-size: 12px; /* Riduce la dimensione del testo sui dispositivi più piccoli */
+        margin: 8px 0; /* Riduce il margine sopra e sotto per evitare la compattazione */
+    }
 }
 
 
@@ -532,7 +537,7 @@ form.content button {
 }
 .contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 80px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #132043;
@@ -550,6 +555,11 @@ form.content button {
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    #contact {
+        margin-top: 80px; /* Aggiunge spazio in più sopra la sezione contact */
+    }
+}
 
 .fade-in-section {
     opacity: 0;
