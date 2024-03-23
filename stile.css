@@ -8,6 +8,20 @@ body, html{
 
 /*media query responsive*/
 
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column; /* Disponi gli elementi in colonna invece che in fila */
+        align-items: center; /* Centra gli elementi sull'asse trasversale (in questo caso, orizzontalmente) */
+    }
+
+    .content img {
+        width: 80%; /* Ridimensiona l'immagine per adattarla meglio allo schermo */
+        margin-bottom: 20px; /* Aggiunge spazio tra l'immagine e il testo sottostante */
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
 /* Stili base qui */
 
 .container {
@@ -29,6 +43,29 @@ body {
     padding: 20px;
     max-width: 1200px;
 }
+
+@media (max-width: 768px) {
+    #home .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #home .content img {
+        max-width: 80%; /* Riduci la larghezza dell'immagine se necessario */
+        margin-bottom: 20px; /* Aggiungi spazio tra l'immagine e il testo */
+    }
+
+    #home .content div {
+        width: 100%; /* Utilizza tutta la larghezza disponibile per il contenuto di testo */
+    }
+
+    #home .content .button-link {
+        width: auto; /* Adatta la larghezza del bottone al testo */
+        margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
+    }
+}
+
 
 h1 {
     border: 2px solid #1F4172; /* Spessore e colore del bordo */
@@ -120,6 +157,7 @@ nav ul li a:hover {
     width: 100%;
     text-decoration: none;
     color: #132043;
+    margin-bottom: 50px;
 }
 
 .sidebar a{
@@ -187,7 +225,7 @@ ul {
 @media (max-width: 767px) {
     .button, .button-link {
         padding: 10px 20px; /* Riduci lo spazio interno per rendere i bottoni più piccoli */
-        font-size: 0.8rem; /* Riduci la dimensione del testo */
+        font-size: 1rem; /* Riduci la dimensione del testo */
         display: block; /* I bottoni saranno disposti uno sotto l'altro */
         width: 100%; /* I bottoni occupano l'intera larghezza del contenitore */
         margin-bottom: 15px; /* Aumenta lo spazio tra i bottoni */
