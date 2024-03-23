@@ -161,7 +161,7 @@ ul {
     display: none;
 }
 
-@media(max-width: 800px){
+@media(max-width: 767px){
     .hideOnMobile{
         display: none;
     }
@@ -209,7 +209,7 @@ ul {
     display: inline-block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .button, .button-link {
         padding: 10px 20px; /* Riduci lo spazio interno per rendere i bottoni più piccoli */
         font-size: 0.8rem; /* Riduci la dimensione del testo */
@@ -315,10 +315,45 @@ ul {
     margin-bottom: -150px;
 }
 
+
 .about-main{
     text-align: justify;
     line-height: 1.6;
 }
+
+@media (max-width: 767px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-main, .hard-skills, .soft-skills {
+        width: 100%;
+        /* Elimina eventuali margini laterali o impostazioni che potrebbero influenzare l'allineamento */
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .about-main p, .hard-skills p, .soft-skills li {
+        /* Migliora la leggibilità del testo su dispositivi più piccoli */
+        font-size: 16px; /* Adegua la dimensione del font secondo necessità */
+        line-height: 1.5; /* Aumenta l'interlinea per una migliore leggibilità */
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none; /* Rimuove i pallini dall'elenco */
+    }
+
+    .skills-list li {
+        margin-bottom: 10px; /* Aumenta lo spazio tra gli elementi dell'elenco */
+        align-items: center;
+    }
+}
+
 
 #portfolio {
     text-align: center; /* Centra il testo della sezione */
@@ -326,7 +361,7 @@ ul {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #portfolio {
         margin-top: 80px; /* Aggiunge spazio in più sopra la sezione portfolio */
     }
@@ -481,7 +516,7 @@ ul {
     font-size: 16px; /*dimensione predefinita del testo*/
     margin: 10px 0; /*margine sopra e sotto per separare il testo dalle immagini*/
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .portfolio-item p {
         font-size: 12px; /* Riduce la dimensione del testo sui dispositivi più piccoli */
         margin: 8px 0; /* Riduce il margine sopra e sotto per evitare la compattazione */
@@ -555,7 +590,7 @@ form.content button {
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #contact {
         margin-top: 80px; /* Aggiunge spazio in più sopra la sezione contact */
     }
