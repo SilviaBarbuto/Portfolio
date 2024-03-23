@@ -10,31 +10,6 @@ body, html{
 
 /* Stili base qui */
 
-@media (max-width: 600px) {
-    /* Stili per dispositivi con larghezza fino a 600px */
-    body {
-        font-size: 14px;
-    }
-    .content, .sidebar, .button, button, .button-link {
-        /* Aggiungi qui gli stili specifici per mobile */
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    /* Stili per dispositivi con larghezza da 601px a 1024px */
-    .content, .sidebar, .button, button, .button-link {
-        /* Aggiungi qui gli stili specifici per tablet */
-    }
-}
-
-@media (min-width: 1025px) {
-    /* Stili per dispositivi con larghezza superiore a 1024px */
-    .content, .sidebar, .button, button, .button-link {
-        /* Aggiungi qui gli stili specifici per desktop */
-    }
-}
-
-
 .container {
     width: 80%;
     max-width: 1200px;
