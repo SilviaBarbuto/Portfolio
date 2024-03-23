@@ -44,29 +44,6 @@ body {
     max-width: 1200px;
 }
 
-@media (max-width: 768px) {
-    #home .content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #home .content img {
-        max-width: 80%; /* Riduci la larghezza dell'immagine se necessario */
-        margin-bottom: 20px; /* Aggiungi spazio tra l'immagine e il testo */
-    }
-
-    #home .content div {
-        width: 100%; /* Utilizza tutta la larghezza disponibile per il contenuto di testo */
-    }
-
-    #home .content .button-link {
-        width: auto; /* Adatta la larghezza del bottone al testo */
-        margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
-    }
-}
-
-
 h1 {
     border: 2px solid #1F4172; /* Spessore e colore del bordo */
     border-radius: 10px; /* Raggio dell'angolo arrotondato */
@@ -334,38 +311,56 @@ ul {
     line-height: 1.6;
 }
 
+/*responsive sezione about*/
+
 @media (max-width: 767px) {
     .about-section {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .about-main, .hard-skills, .soft-skills {
+    .about-main, .skills-container {
         width: 100%;
-        /* Elimina eventuali margini laterali o impostazioni che potrebbero influenzare l'allineamento */
         margin: 0 auto;
-        padding: 10px;
+        padding: 0 15px; /* Aggiungi un po' di padding laterale per non far attaccare il testo ai bordi dello schermo */
     }
 
-    .about-main p, .hard-skills p, .soft-skills li {
-        /* Migliora la leggibilità del testo su dispositivi più piccoli */
-        font-size: 16px; /* Adegua la dimensione del font secondo necessità */
-        line-height: 1.5; /* Aumenta l'interlinea per una migliore leggibilità */
-    }
-
-    .skills-list {
+    .hard-skills, .soft-skills{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        list-style-type: none; /* Rimuove i pallini dall'elenco */
     }
 
-    .skills-list li {
-        margin-bottom: 10px; /* Aumenta lo spazio tra gli elementi dell'elenco */
-        align-items: center;
+    .hard-skills .skill-list{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .hard-skills .skill-list li{
+        margin: 10px;
+        display: flex;
+    }
+
+    .soft-skills {
+        margin-top: 20px;
+    }
+
+    .soft-skills .skills-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .soft-skills .skills-list li {
+        margin-bottom: 10px; /* Aumenta lo spazio tra gli elementi dell'elenco delle soft skills */
     }
 }
+
 
 
 #portfolio {
