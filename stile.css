@@ -53,6 +53,29 @@ h1 {
     display: inline-block; /* Rende il riquadro adattabile al contenuto */
 }
 
+@media (max-width: 768px) {
+    #home .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #home .content img {
+        max-width: 80%; /* Riduci la larghezza dell'immagine se necessario */
+        margin-bottom: 20px; /* Aggiungi spazio tra l'immagine e il testo */
+    }
+
+    #home .content div {
+        width: 100%; /* Utilizza tutta la larghezza disponibile per il contenuto di testo */
+    }
+
+    #home .content .button-link {
+        width: auto; /* Adatta la larghezza del bottone al testo */
+        margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
+    }
+}
+
+
 
 header, footer {
     text-align: center;
