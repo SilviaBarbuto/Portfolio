@@ -1,5 +1,6 @@
 User
 body, html{
+    width: 100%; /*aggiunto*/
     height: 100%;
     margin:0;
     padding:0;
@@ -8,10 +9,18 @@ body, html{
 
 /*media query responsive*/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .content {
+        display: flex;
         flex-direction: column; /* Disponi gli elementi in colonna invece che in fila */
         align-items: center; /* Centra gli elementi sull'asse trasversale (in questo caso, orizzontalmente) */
+        justify-content: center;
+    }
+
+    .content > *{
+        width: 100%; /*adatta la larghezza al contenitore*/
+        max-width: 100%; /*assicurati che non superi la larghezza dello schermo*/
+        box-sizing: border-box; /*include padding e border nella larghezza dell'elemento*/
     }
 
     .content img {
