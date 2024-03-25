@@ -190,7 +190,7 @@ nav ul li a:hover {
     flex-direction: column;
     font-weight: 800;
     color: #132043;
-    padding: auto;
+    padding: 50px;
     text-align: center;
 }
 
@@ -485,6 +485,7 @@ ul {
     text-decoration: none; /* Rimuove il sottolineamento */
     color: inherit; /* Opzionale: fa sì che il link utilizzi il colore del testo circostante */
 }
+
 
 .portfolio-item {
     position: relative;
