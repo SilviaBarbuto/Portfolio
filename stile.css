@@ -190,7 +190,7 @@ nav ul li a:hover {
     flex-direction: column;
     font-weight: 800;
     color: #132043;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -240,13 +240,13 @@ ul {
         right:0; /* allinea bottone lato destro sidebar*/
         margin-right: 10px; /*aggiunge margine destro*/
         margin-top: 10px; /* aggiunge marg superiore*/
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
+}
 
-    .sidebar a {
-        display: block; /*rende ogni link un blocco*/
-        padding: 50px 0; /*Aggiunge padding sopra e sotto per aumentare area cliccabile*/
-    }
+.sidebar a {
+    display: block; /* Rende ogni link un blocco, facilitando la gestione dello spazio */
+    padding: 5px 0; /* Aggiunge padding sopra e sotto per aumentare l'area cliccabile */
 }
 
 /*fine side bar*/
@@ -485,7 +485,6 @@ ul {
     text-decoration: none; /* Rimuove il sottolineamento */
     color: inherit; /* Opzionale: fa sì che il link utilizzi il colore del testo circostante */
 }
-
 
 .portfolio-item {
     position: relative;
