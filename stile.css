@@ -119,6 +119,24 @@ footer {
     position: relative; /* Cambiato in fixed per mantenerlo sempre visibile in basso */
 }
 
+@media (max-width: 768px) {
+    header, footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+        bottom: auto;
+        height: auto;
+    }
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
 
 section {
     min-height: 60vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
