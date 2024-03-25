@@ -44,6 +44,13 @@ body, html{
     height: auto;
   }
 
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #FDF0F0;
@@ -72,6 +79,8 @@ h1 {
     #home .content img {
         max-width: 80%; /* Riduci la larghezza dell'immagine se necessario */
         margin-bottom: 20px; /* Aggiungi spazio tra l'immagine e il testo */
+        border-radius: 50%;
+
     }
 
     #home .content div {
@@ -83,8 +92,6 @@ h1 {
         margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
     }
 }
-
-
 
 header, footer {
     text-align: center;
@@ -150,16 +157,17 @@ nav ul li a:hover {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 150px;
+    width: 100%;
     z-index: 999;
-    background-color: #f1b4bb37;
+    background-color: #f1b4bbe4;
     backdrop-filter: blur(10px) ;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
     flex-direction: column;
     font-weight: 800;
     color: #132043;
-    padding: 10px;
+    padding: auto;
+    text-align: center;
 }
 
 .sidebar li{
