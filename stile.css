@@ -7,6 +7,92 @@ body, html{
     overflow-x: hidden; /*previene la barra di scorrimento orizzontale*/
 }
 
+/*media query responsive*/
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column; /* Disponi gli elementi in colonna invece che in fila */
+        align-items: center; /* Centra gli elementi sull'asse trasversale (in questo caso, orizzontalmente) */
+        justify-content: center;
+    }
+
+    .content > *{
+        width: 100%; /*adatta la larghezza al contenitore*/
+        max-width: 100%; /*assicurati che non superi la larghezza dello schermo*/
+        box-sizing: border-box; /*include padding e border nella larghezza dell'elemento*/
+    }
+
+    .content img {
+        width: 80%; /* Ridimensiona l'immagine per adattarla meglio allo schermo */
+        margin-bottom: 20px; /* Aggiunge spazio tra l'immagine e il testo sottostante */
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+/* Stili base qui */
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FDF0F0;
+    color: #132043;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    overflow-x: hidden;
+}
+
+h1 {
+    border: 2px solid #1F4172; /* Spessore e colore del bordo */
+    border-radius: 10px; /* Raggio dell'angolo arrotondato */
+    background-color: transparent; /* Sfondo trasparente */
+    color: #132043; /* Colore del testo */
+    padding: 10px; /* Spazio tra il testo e il bordo del riquadro */
+    display: inline-block; /* Rende il riquadro adattabile al contenuto */
+}
+
+@media (max-width: 768px) {
+    #home .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #home .content img {
+        max-width: 100%; /* Riduci la larghezza dell'immagine se necessario */
+        margin-bottom: 20px; /* Aggiungi spazio tra l'immagine e il testo */
+        border-radius: 50%;
+
+    }
+
+    #home .content div {
+        width: 100%; /* Utilizza tutta la larghezza disponibile per il contenuto di testo */
+    }
+
+    #home .content .button-link {
+        width: auto; /* Adatta la larghezza del bottone al testo */
+        margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
+    }
+}
 
 header, footer {
     text-align: center;
@@ -58,133 +144,9 @@ body, html {
     box-sizing: border-box;
 }
 
-/*media query responsive*/
-
-@media (max-width: 768px) {
-    .content {
-        display: flex;
-        flex-direction: column; /* Disponi gli elementi in colonna invece che in fila */
-        align-items: center; /* Centra gli elementi sull'asse trasversale (in questo caso, orizzontalmente) */
-        justify-content: center;
-    }
-
-    .content > *{
-        width: 100%; /*adatta la larghezza al contenitore*/
-        max-width: 100%; /*assicurati che non superi la larghezza dello schermo*/
-        box-sizing: border-box; /*include padding e border nella larghezza dell'elemento*/
-    }
-
-    .content img {
-        width: 80%; /* Ridimensiona l'immagine per adattarla meglio allo schermo */
-        margin-bottom: 20px; /* Aggiunge spazio tra l'immagine e il testo sottostante */
-        height: auto;
-        border-radius: 50%;
-    }
-}
-
-/* Stili base qui */
-
-.wave-container{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.wave-container svg{
-    display:block;
-    width: 100%;
-    height: auto;
-}
-
-.wave-container1 {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.wave-container1 svg{
-    display:block;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.wave-container2 {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.wave-container2 svg{
-    display:block;
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: #FDF0F0;
-    color: #132043;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1200px;
-    overflow-x: hidden;
-}
-
-h1 {
-    border: 2px solid #1F4172; /* Spessore e colore del bordo */
-    border-radius: 10px; /* Raggio dell'angolo arrotondato */
-    background-color: transparent; /* Sfondo trasparente */
-    color: #132043; /* Colore del testo */
-    padding: 10px; /* Spazio tra il testo e il bordo del riquadro */
-    display: inline-block; /* Rende il riquadro adattabile al contenuto */
-}
-
-@media (max-width: 768px) {
-    #home .content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #home .content img {
-        max-width: 80%; /* Riduci la larghezza dell'immagine se necessario */
-        margin-bottom: 20px; /* Aggiungi spazio tra l'immagine e il testo */
-        border-radius: 50%;
-    }
-
-    #home .content div {
-        width: 100%; /* Utilizza tutta la larghezza disponibile per il contenuto di testo */
-    }
-
-    #home .content .button-link {
-        width: auto; /* Adatta la larghezza del bottone al testo */
-        margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
-    }
-}
-
 section {
     min-height: 60vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
     padding: 50px; /* Aggiungi del padding per estetica */
-    max-width: 100%;
     /* Altri stili qui */
 }
 
@@ -373,6 +335,42 @@ ul {
 }
 
 
+.wave-container{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.wave-container svg{
+    display:block;
+    width: 100vw;
+    height: auto;
+}
+
+.wave-container1 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.wave-container1 svg{
+    display:block;
+    width: 100vw;
+    height: auto;
+    margin-top: 20px;
+}
+
+.wave-container2 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.wave-container2 svg{
+    display:block;
+    width: 100vw;
+    height: auto;
+    margin-top: 60px;
+}
+
 .about{
     margin-bottom: -150px;
 }
@@ -475,32 +473,12 @@ ul {
 }
 
 .portfolio-item {
-    flex: 1 1 calc(33% - 20px);
-    margin: 10px;
     position: relative;
     overflow: hidden;
     border: 2.5px solid #F1B4BB;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
 }
-
-.portfolio-container{
-    padding: 0;
-    background: transparent;
-}
-
-@media (max-width: 768px) {
-    .portfolio-item {
-      /* ... (esistente) */
-      flex: 1 1 calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .portfolio-item {
-      flex: 1 1 calc(100% - 20px);
-    }
-  }
 
 .portfolio-item img {
     width: 100%;
