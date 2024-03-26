@@ -364,12 +364,21 @@ ul {
     overflow: hidden;
     position: relative;
 }
+
 .wave-container2 svg{
     display:block;
     width: 100vw;
     height: auto;
     margin-top: 60px;
 }
+
+/* Nasconde le wave su schermi con larghezza fino a 424px */
+@media (max-width: 424px) {
+    .wave-container {
+        display: none;
+    }
+}
+
 
 .about{
     margin-bottom: -150px;
