@@ -9,27 +9,6 @@ body, html{
 
 /*media query responsive*/
 
-@media (max-width: 768px) {
-    .content {
-        display: flex;
-        flex-direction: column; /* Disponi gli elementi in colonna invece che in fila */
-        align-items: center; /* Centra gli elementi sull'asse trasversale (in questo caso, orizzontalmente) */
-        justify-content: center;
-    }
-
-    .content > *{
-        width: 100%; /*adatta la larghezza al contenitore*/
-        max-width: 100%; /*assicurati che non superi la larghezza dello schermo*/
-        box-sizing: border-box; /*include padding e border nella larghezza dell'elemento*/
-    }
-
-    .content img {
-        width: 80%; /* Ridimensiona l'immagine per adattarla meglio allo schermo */
-        margin-bottom: 20px; /* Aggiunge spazio tra l'immagine e il testo sottostante */
-        height: auto;
-        border-radius: 50%;
-    }
-}
 
 /* Stili base qui */
 
@@ -70,7 +49,7 @@ h1 {
     display: inline-block; /* Rende il riquadro adattabile al contenuto */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     #home .content {
         flex-direction: column;
         align-items: center;
@@ -122,19 +101,6 @@ footer {
     position: relative; /* Cambiato in fixed per mantenerlo sempre visibile in basso */
 }
 
-@media (max-width: 768px) {
-    header, footer {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    footer {
-        position: relative;
-        bottom: auto;
-        height: auto;
-    }
-}
 
 body, html {
     overflow-x: hidden;
@@ -220,7 +186,7 @@ ul {
     z-index: 1500;
 }
 
-@media(max-width: 768px){
+@media(max-width: 480px){
     .hideOnMobile{
         display: none;
     }
@@ -232,15 +198,50 @@ ul {
 @media(max-width: 400px){
     .sidebar{
         width: 100%;
+        padding-top: 20px;
     }
 
     .sidebar li {
-        position: absolute;
         top:0; /* posiziona bottone inizio sidebar*/
         right:0; /* allinea bottone lato destro sidebar*/
         margin-right: 10px; /*aggiunge margine destro*/
         margin-top: 10px; /* aggiunge marg superiore*/
         margin-bottom: 30px;
+    }
+
+    .wave-container, .wave-container1, .wave-container2 {
+        display: none;
+    }
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio-item p{
+        font-size: 14px;
+    }
+
+    header, section, footer{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .content, .about-main, .skills-container, .info, form.content {
+        width: 100%; /* Usa tutta la larghezza disponibile */
+        box-sizing: border-box; /* Include padding e border nel calcolo della larghezza */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* Imposta 2 colonne */
     }
 }
 
@@ -313,7 +314,6 @@ ul {
     border-radius: 20px; /* assicurarsi che hover mantenga bordi arrotondati*/
 }
 
-
 .button-link {
     background-color: #F1B4BB;
     color: #1F4172;
@@ -373,12 +373,6 @@ ul {
 }
 
 /* Nasconde le wave su schermi con larghezza fino a 424px */
-@media (max-width: 424px) {
-    .wave-container {
-        display: none;
-    }
-}
-
 
 .about{
     margin-bottom: -150px;
@@ -392,7 +386,7 @@ ul {
 
 /*responsive sezione about*/
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .about-section {
         display: flex;
         flex-direction: column;
@@ -441,18 +435,12 @@ ul {
 }
 
 
-
 #portfolio {
     text-align: center; /* Centra il testo della sezione */
     margin: auto;
     padding: 20px;
 }
 
-@media (max-width: 767px) {
-    #portfolio {
-        margin-top: 80px; /* Aggiunge spazio in più sopra la sezione portfolio */
-    }
-}
 
 .social-icons {
     display: flex;
@@ -603,7 +591,7 @@ ul {
     font-size: 16px; /*dimensione predefinita del testo*/
     margin: 10px 0; /*margine sopra e sotto per separare il testo dalle immagini*/
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .portfolio-item p {
         font-size: 12px; /* Riduce la dimensione del testo sui dispositivi più piccoli */
         margin: 8px 0; /* Riduce il margine sopra e sotto per evitare la compattazione */
@@ -677,11 +665,6 @@ form.content button {
     font-weight: 700;
 }
 
-@media (max-width: 767px) {
-    #contact {
-        margin-top: 40px; /* Aggiunge spazio in più sopra la sezione contact */
-    }
-}
 
 .fade-in-section {
     opacity: 0;
