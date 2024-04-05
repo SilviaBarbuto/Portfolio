@@ -402,6 +402,10 @@ ul {
         align-items: center;
     }
 
+    .hard-skills{
+        margin-left:-20px;
+    }
+
     .hard-skills .skill-list{
         display:flex;
         flex-wrap: wrap;
@@ -417,6 +421,7 @@ ul {
 
     .soft-skills {
         margin-top: 20px;
+        margin-left: -20px;
     }
 
     .soft-skills .skills-list {
@@ -711,6 +716,13 @@ form.content button {
     .form-field {
         width: 100%; /* Usa la larghezza intera su dispositivi mobili */
         padding: 0 30px; /* Aggiunge un po' di spazio ai lati */
+    }
+}
+
+@media (max-width: 480px) {
+    #contact {
+        background-color: transparent; /* Rendi lo sfondo trasparente */
+        box-shadow: none; /* Rimuovi l'ombra per mantenere coerenza visiva */
     }
 }
 
