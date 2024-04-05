@@ -177,6 +177,11 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
+.button-link:first-of-type {
+    margin-right: 40px; /* Aggiunge margine a destra del primo bottone */
+}
+
+
 /*Nav SideBar*/
 
 .sidebar {
@@ -314,7 +319,7 @@ ul {
     margin-bottom: 10px;
     font-size: 1rem;
     display: inline-block;
-    margin-left: -30px;
+    margin-left: -10px;
 }
 
 @media (max-width: 767px) {
