@@ -12,7 +12,7 @@ body, html{
 /* Stili base qui */
 
 .container {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
   }
@@ -83,9 +83,17 @@ header, footer {
 
 header {
     top: 0;
-    border-bottom: 2px solid #132043;
     padding: 30px;
     max-width: 100%;
+}
+
+.header-line {
+    position: relative; /* o `absolute` a seconda delle necessità */
+    top: 10px; /* Adatta questo valore in base all'altezza del tuo header */
+    left: 0;
+    right: 0;
+    border-top: 3px solid #132043; /* Stile della linea */
+    z-index: 10; /* Assicurati che sia sopra al contenuto della pagina */
 }
 
 footer {
@@ -96,8 +104,22 @@ footer {
     height: 150px;
     bottom: 0;
     max-width: 100%;
-    border-top: 2px solid #132043;
     position: relative; /* Cambiato in fixed per mantenerlo sempre visibile in basso */
+}
+
+.footer-line {
+    position: relative; /* o `absolute` a seconda delle necessità */
+    bottom: 0; /* Adatta questo valore in base all'altezza del tuo header */
+    left: 0;
+    right: 0;
+    border-top: 3px solid #132043; /* Stile della linea */
+    z-index: 10; /* Assicurati che sia sopra al contenuto della pagina */
+}
+
+@media (max-width: 768px) {
+    .footer-line , .header-line {
+        border-top: 2px solid #132043; /* Più sottile su dispositivi mobili */
+    }
 }
 
 
@@ -148,7 +170,7 @@ nav ul li a:hover {
     height: 100vh;
     width: 100%;
     z-index: 999;
-    background-color: #f1b4bbe4;
+    background-color: #f1b4bb;
     backdrop-filter: blur(10px) ;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
@@ -333,43 +355,6 @@ ul {
     border-radius: 20px; /* assicurarsi che hover mantenga bordi arrotondati*/
 }
 
-
-.wave-container{
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-}
-
-.wave-container svg{
-    display:block;
-    width: 100vw;
-    height: auto;
-}
-
-.wave-container1 {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-}
-.wave-container1 svg{
-    display:block;
-    width: 100vw;
-    height: auto;
-    margin-top: 20px;
-}
-
-.wave-container2 {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-}
-
-.wave-container2 svg{
-    display:block;
-    width: 100vw;
-    height: auto;
-    margin-top: 60px;
-}
 
 /* Nasconde le wave su schermi con larghezza fino a 424px */
 
