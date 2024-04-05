@@ -407,6 +407,11 @@ ul {
         justify-content: center;
         list-style: none;
         padding: 0;
+        align-items: center;
+    }
+
+    .hard-skills {
+        margin-left: -20px;
     }
 
     .hard-skills .skill-list li{
@@ -416,6 +421,8 @@ ul {
 
     .soft-skills {
         margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -20px;
     }
 
     .soft-skills .skills-list {
