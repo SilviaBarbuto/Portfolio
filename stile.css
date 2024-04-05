@@ -129,6 +129,7 @@ footer {
     right: 0;
     border-top: 3px solid #132043; /* Stile della linea */
     z-index: 10; /* Assicurati che sia sopra al contenuto della pagina */
+    margin-top: 60px;
 }
 
 @media (max-width: 768px) {
@@ -407,11 +408,6 @@ ul {
         justify-content: center;
         list-style: none;
         padding: 0;
-        align-items: center;
-    }
-
-    .hard-skills {
-        margin-left: -20px;
     }
 
     .hard-skills .skill-list li{
@@ -421,8 +417,6 @@ ul {
 
     .soft-skills {
         margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: -20px;
     }
 
     .soft-skills .skills-list {
@@ -448,7 +442,7 @@ ul {
     background-color: #1f42725c; /* Sostituisci con il colore desiderato */
     border-radius: 20px; /* Angoli arrotondati. Aumenta o diminuisci questo valore per ottenere l'arrotondamento desiderato */
     padding: 20px; /* Aggiungi del padding intorno al contenuto per non avere il testo troppo vicino ai bordi */
-    margin: 20px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
+    margin: 5px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opzionale: aggiunge un leggero ombreggiamento per elevare la sezione dal resto della pagina */
 }
 
@@ -713,6 +707,12 @@ form.content button {
     font-weight: 700;
 }
 
+@media (max-width: 480px) {
+    .form-field {
+        width: 100%; /* Usa la larghezza intera su dispositivi mobili */
+        padding: 0 30px; /* Aggiunge un po' di spazio ai lati */
+    }
+}
 
 .fade-in-section {
     opacity: 0;
