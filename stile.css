@@ -417,6 +417,23 @@ ul {
     }
 }
 
+#about {
+    background-color: #f1b4bb37; /* Sostituisci con il colore desiderato */
+    border-radius: 20px; /* Angoli arrotondati. Aumenta o diminuisci questo valore per ottenere l'arrotondamento desiderato */
+    padding: 20px; /* Aggiungi del padding intorno al contenuto per non avere il testo troppo vicino ai bordi */
+    margin: 20px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opzionale: aggiunge un leggero ombreggiamento per elevare la sezione dal resto della pagina */
+}
+
+
+#contact {
+    background-color: #1f427233; /* Sostituisci con il colore desiderato */
+    border-radius: 20px; /* Angoli arrotondati. Aumenta o diminuisci questo valore per ottenere l'arrotondamento desiderato */
+    padding: 20px; /* Aggiungi del padding intorno al contenuto per non avere il testo troppo vicino ai bordi */
+    margin: 20px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opzionale: aggiunge un leggero ombreggiamento per elevare la sezione dal resto della pagina */
+}
+
 
 #portfolio {
     text-align: center; /* Centra il testo della sezione */
@@ -444,7 +461,7 @@ ul {
 
 
 .portfolio{
-    margin-top: -50px;
+    margin-top: -100px;
 }
 
 .portfolio-item p a {
@@ -578,6 +595,29 @@ ul {
     .portfolio-item p {
         font-size: 12px; /* Riduce la dimensione del testo sui dispositivi più piccoli */
         margin: 8px 0; /* Riduce il margine sopra e sotto per evitare la compattazione */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonne per dispositivi più piccoli */
+    }
+}
+
+/* Assicurati che gli elementi del portfolio siano responsive e non si accavallino */
+.portfolio-item {
+    margin-bottom: 20px; /* Aggiunge spazio sotto ogni elemento */
+}
+
+.portfolio-item img {
+    max-width: 100%; /* Assicura che le immagini non superino la larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+/* Aggiusta la dimensione del testo nei progetti per dispositivi più piccoli, se necessario */
+@media (max-width: 480px) {
+    .portfolio-item p {
+        font-size: smaller; /* Riduci la dimensione del testo sui dispositivi più piccoli per evitare accavallamenti */
     }
 }
 
