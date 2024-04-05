@@ -1,7 +1,6 @@
 User
 body, html{
-    width: 100%; /*aggiunto*/
-    height: 100%;
+    box-sizing: border-box;  /* Assicura che padding e border siano inclusi nel calcolo delle dimensioni degli elementi */
     margin:0;
     padding:0;
     overflow-x: hidden; /*previene la barra di scorrimento orizzontale*/
