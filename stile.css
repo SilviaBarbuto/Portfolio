@@ -131,7 +131,7 @@ body, html {
 }
 
 section {
-    min-height: 60vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
+    min-height: 100vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
     padding: 50px; /* Aggiungi del padding per estetica */
     /* Altri stili qui */
 }
@@ -227,10 +227,6 @@ ul {
         margin-right: 10px; /*aggiunge margine destro*/
         margin-top: 10px; /* aggiunge marg superiore*/
         margin-bottom: 30px;
-    }
-
-    .wave-container, .wave-container1, .wave-container2 {
-        display: none;
     }
 
     .portfolio-container {
@@ -361,7 +357,6 @@ ul {
     margin-bottom: -150px;
 }
 
-
 .about-main{
     text-align: justify;
     line-height: 1.6;
@@ -427,7 +422,7 @@ ul {
 
 
 #contact {
-    background-color: #1f427233; /* Sostituisci con il colore desiderato */
+    background-color: #1f42725c; /* Sostituisci con il colore desiderato */
     border-radius: 20px; /* Angoli arrotondati. Aumenta o diminuisci questo valore per ottenere l'arrotondamento desiderato */
     padding: 20px; /* Aggiungi del padding intorno al contenuto per non avere il testo troppo vicino ai bordi */
     margin: 20px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
@@ -571,9 +566,10 @@ ul {
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-radius: 20px;;
     gap: 20px;
     padding: 20px;
-    margin-top: 60px; /* Per non sovrapporsi all'header */
+    margin-top: 100px; /* Per non sovrapporsi all'header */
     background-color: rgba(241, 180, 187, 0.311); /* Rosa trasparente */
     backdrop-filter: blur(10px); /* Effetto sfocatura per il vetro */
     -webkit-backdrop-filter: blur(10px); /* Per il supporto su Safari */
