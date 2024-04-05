@@ -147,7 +147,7 @@ body, html {
 }
 
 section {
-    min-height: 100vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
+    min-height: 80vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
     padding: 50px; /* Aggiungi del padding per estetica */
     /* Altri stili qui */
 }
