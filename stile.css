@@ -27,6 +27,22 @@ body, html{
     object-fit: cover;
   }
 
+/*media query per profile-image*/
+
+@media (max-width: 480px) {
+    .content {
+        display: flex;
+        justify-content: center; /* Centra l'immagine orizzontalmente */
+        align-items: center; /* Centra l'immagine verticalmente se necessario */
+    }
+
+    .profile-image {
+        margin: 0 auto; /* Un altro metodo per centrare l'immagine se il flex non è appropriato per la tua struttura */
+        display: block;
+    }
+}
+/*fine profile-image query*/
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #FDF0F0;
