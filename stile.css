@@ -85,7 +85,8 @@ h1 {
         margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
     }
 }
-header,footer {
+
+footer {
     text-align: center;
     padding: 10px;
     position: relative;
