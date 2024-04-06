@@ -391,10 +391,9 @@ ul {
 }
 
 
-/* Nasconde le wave su schermi con larghezza fino a 424px */
-
 .about{
-    margin-bottom: -150px;
+    margin-bottom: 150px;
+    margin-top: 100px;
 }
 
 .about-main{
@@ -472,6 +471,7 @@ ul {
     padding: 20px; /* Aggiungi del padding intorno al contenuto per non avere il testo troppo vicino ai bordi */
     margin: 5px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opzionale: aggiunge un leggero ombreggiamento per elevare la sezione dal resto della pagina */
+    margin-top: 80px;
 }
 
 @media (max-width: 480px) {
@@ -485,6 +485,7 @@ ul {
     text-align: center; /* Centra il testo della sezione */
     margin: auto;
     padding: 20px;
+    margin-top: 100px;
 }
 
 
