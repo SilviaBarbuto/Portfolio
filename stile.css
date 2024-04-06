@@ -85,8 +85,7 @@ h1 {
         margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
     }
 }
-
-header, footer {
+header,footer {
     text-align: center;
     padding: 10px;
     position: relative;
@@ -97,10 +96,28 @@ header, footer {
 
 
 header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
     top: 0;
     padding: 30px;
     max-width: 100%;
+    text-align: center;
 }
+
+.logo-container a img{
+    height: 80px;
+    width: auto;
+}
+
+@media (max-width: 480px) {
+    .logo-container{
+        width: 100%; /* Permette ai contenitori di espandersi sull'intera larghezza */
+        justify-content: center;
+        display: flex;
+    }
+}
+
 
 .header-line {
     position: relative; /* o `absolute` a seconda delle necessità */
@@ -176,6 +193,11 @@ nav ul li a:hover {
     border-bottom: 2px solid #F1B4BB;
     font-weight: 700;
 }
+
+.button-link:first-of-type {
+    margin-right: 40px; /* Aggiunge margine a destra del primo bottone */
+}
+
 
 /*Nav SideBar*/
 
@@ -314,7 +336,7 @@ ul {
     margin-bottom: 10px;
     font-size: 1rem;
     display: inline-block;
-    margin-left: -30px;
+    margin-left: -10px;
 }
 
 @media (max-width: 767px) {
