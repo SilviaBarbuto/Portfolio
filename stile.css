@@ -337,17 +337,31 @@ ul {
     margin-bottom: 10px;
     font-size: 1rem;
     display: inline-block;
-    margin-left: -10px;
+    margin-left: -20px;
+    flex: 1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .button, .button-link {
         padding: 10px 20px; /* Riduci lo spazio interno per rendere i bottoni più piccoli */
         font-size: 1rem; /* Riduci la dimensione del testo */
         display: block; /* I bottoni saranno disposti uno sotto l'altro */
-        width: 100%; /* I bottoni occupano l'intera larghezza del contenitore */
+        width: auto; /* I bottoni occupano l'intera larghezza del contenitore */
         margin-bottom: 15px; /* Aumenta lo spazio tra i bottoni */
         text-align: center;
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-link {
+        width: calc(100% - 80px); /* Occupa tutta la larghezza del contenitore, ajusta il calcolo se necessario */
+        margin: 5px 30px; /* Aggiunge margine ai lati per non attaccare ai bordi dello schermo */
     }
 }
 
