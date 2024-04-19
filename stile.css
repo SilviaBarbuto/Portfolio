@@ -1,13 +1,11 @@
 User
 
 body, html{
-    box-sizing: border-box;  /* Assicura che padding e border siano inclusi nel calcolo delle dimensioni degli elementi */
+    box-sizing: border-box;
     margin:0;
     padding:0;
-    overflow-x: hidden; /*previene la barra di scorrimento orizzontale*/
+    overflow-x: hidden;
 }
-
-/* Stili base qui */
 
 .container {
     width: 100%;
@@ -27,21 +25,19 @@ body, html{
     object-fit: cover;
   }
 
-/*media query per profile-image*/
 
 @media (max-width: 480px) {
     .content {
         display: flex;
-        justify-content: center; /* Centra l'immagine orizzontalmente */
-        align-items: center; /* Centra l'immagine verticalmente se necessario */
+        justify-content: center;
+        align-items: center; 
     }
 
     .profile-image {
-        margin: 0 auto; /* Un altro metodo per centrare l'immagine se il flex non è appropriato per la tua struttura */
+        margin: 0 auto; 
         display: block;
     }
 }
-/*fine profile-image query*/
 
 body {
     font-family: 'Lato', sans-serif;
@@ -54,12 +50,12 @@ body {
 }
 
 h1 {
-    border: 2px solid #1F4172; /* Spessore e colore del bordo */
-    border-radius: 10px; /* Raggio dell'angolo arrotondato */
-    background-color: transparent; /* Sfondo trasparente */
-    color: #132043; /* Colore del testo */
-    padding: 10px; /* Spazio tra il testo e il bordo del riquadro */
-    display: inline-block; /* Rende il riquadro adattabile al contenuto */
+    border: 2px solid #1F4172; 
+    border-radius: 10px;
+    background-color: transparent; 
+    color: #132043;
+    padding: 10px;
+    display: inline-block;
 }
 
 @media (max-width: 480px) {
@@ -70,19 +66,19 @@ h1 {
     }
 
     #home .content img {
-        max-width: 100%; /* Riduci la larghezza dell'immagine se necessario */
-        margin-bottom: 20px; /* Aggiungi spazio tra l'immagine e il testo */
+        max-width: 100%;
+        margin-bottom: 20px;
         border-radius: 50%;
 
     }
 
     #home .content div {
-        width: 100%; /* Utilizza tutta la larghezza disponibile per il contenuto di testo */
+        width: 100%;
     }
 
     #home .content .button-link {
-        width: auto; /* Adatta la larghezza del bottone al testo */
-        margin-bottom: 10px; /* Aggiungi spazio tra i bottoni */
+        width: auto;
+        margin-bottom: 10px;
     }
 }
 
@@ -92,7 +88,7 @@ footer {
     position: relative;
     width: 100%;
     left: 0;
-    z-index: 1000; /* Assicura che l'header e il footer siano sopra agli altri elementi */
+    z-index: 1000;
 }
 
 
@@ -113,7 +109,7 @@ header {
 
 @media (max-width: 480px) {
     .logo-container{
-        width: 100%; /* Permette ai contenitori di espandersi sull'intera larghezza */
+        width: 100%;
         justify-content: center;
         display: flex;
     }
@@ -121,12 +117,12 @@ header {
 
 
 .header-line {
-    position: relative; /* o `absolute` a seconda delle necessità */
-    top: 10px; /* Adatta questo valore in base all'altezza del tuo header */
+    position: relative;
+    top: 10px;
     left: 0;
     right: 0;
-    border-top: 3px solid #132043; /* Stile della linea */
-    z-index: 10; /* Assicurati che sia sopra al contenuto della pagina */
+    border-top: 3px solid #132043;
+    z-index: 10;
 }
 
 footer {
@@ -137,22 +133,22 @@ footer {
     height: 150px;
     bottom: 0;
     max-width: 100%;
-    position: relative; /* Cambiato in fixed per mantenerlo sempre visibile in basso */
+    position: relative;
 }
 
 .footer-line {
-    position: relative; /* o `absolute` a seconda delle necessità */
-    bottom: 0; /* Adatta questo valore in base all'altezza del tuo header */
+    position: relative;
+    bottom: 0;
     left: 0;
     right: 0;
-    border-top: 3px solid #132043; /* Stile della linea */
-    z-index: 10; /* Assicurati che sia sopra al contenuto della pagina */
+    border-top: 3px solid #132043;
+    z-index: 10;
     margin-top: 60px;
 }
 
 @media (max-width: 768px) {
     .footer-line , .header-line {
-        border-top: 2px solid #132043; /* Più sottile su dispositivi mobili */
+        border-top: 2px solid #132043;
     }
 }
 
@@ -166,9 +162,8 @@ body, html {
 }
 
 section {
-    min-height: 80vh; /* Imposta l'altezza minima di ogni sezione pari all'altezza del viewport */
-    padding: 50px; /* Aggiungi del padding per estetica */
-    /* Altri stili qui */
+    min-height: 80vh;
+    padding: 50px; 
 }
 
 nav ul {
@@ -196,11 +191,9 @@ nav ul li a:hover {
 }
 
 .button-link:first-of-type {
-    margin-right: 40px; /* Aggiunge margine a destra del primo bottone */
+    margin-right: 40px;
 }
 
-
-/*Nav SideBar*/
 
 .sidebar {
     position: fixed;
@@ -262,10 +255,10 @@ ul {
     }
 
     .sidebar li {
-        top:0; /* posiziona bottone inizio sidebar*/
-        right:0; /* allinea bottone lato destro sidebar*/
-        margin-right: 10px; /*aggiunge margine destro*/
-        margin-top: 10px; /* aggiunge marg superiore*/
+        top:0;
+        right:0;
+        margin-right: 10px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
 
@@ -290,23 +283,22 @@ ul {
     }
 
     .content, .about-main, .skills-container, .info, form.content {
-        width: 100%; /* Usa tutta la larghezza disponibile */
-        box-sizing: border-box; /* Include padding e border nel calcolo della larghezza */
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
 @media (max-width: 480px) {
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* Imposta 2 colonne */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 .sidebar a {
-    display: block; /* Rende ogni link un blocco, facilitando la gestione dello spazio */
-    padding: 5px 0; /* Aggiunge padding sopra e sotto per aumentare l'area cliccabile */
+    display: block;
+    padding: 5px 0;
 }
 
-/*fine side bar*/
 
 
 .content {
@@ -314,14 +306,14 @@ ul {
     justify-content: center;
     align-items: center;
     line-height: 1.6;
-    flex-direction: row-reverse; /* Inverte l'ordine: immagine a destra, testo a sinistra */
-    margin: 60px 20px 20px; /* Aumenta il margine superiore per non sovrapporsi all'header */
+    flex-direction: row-reverse; 
+    margin: 60px 20px 20px;
    
 }
 
 .content img {
     border-radius: 50%;
-    width: 250px; /* Ridimensiona secondo necessità */
+    width: 250px;
     height: 250px;
     border: 4px solid #1F4172;
     margin-left: 25px;
@@ -343,11 +335,11 @@ ul {
 
 @media (max-width: 480px) {
     .button, .button-link {
-        padding: 10px 20px; /* Riduci lo spazio interno per rendere i bottoni più piccoli */
-        font-size: 1rem; /* Riduci la dimensione del testo */
-        display: block; /* I bottoni saranno disposti uno sotto l'altro */
-        width: auto; /* I bottoni occupano l'intera larghezza del contenitore */
-        margin-bottom: 15px; /* Aumenta lo spazio tra i bottoni */
+        padding: 10px 20px;
+        font-size: 1rem; 
+        display: block;
+        width: auto;
+        margin-bottom: 15px;
         text-align: center;
         flex: 1;
     }
@@ -361,8 +353,8 @@ ul {
     }
 
     .button-link {
-        width: calc(100% - 80px); /* Occupa tutta la larghezza del contenitore, ajusta il calcolo se necessario */
-        margin: 5px 30px; /* Aggiunge margine ai lati per non attaccare ai bordi dello schermo */
+        width: calc(100% - 80px);
+        margin: 5px 30px;
     }
 }
 
@@ -375,14 +367,14 @@ ul {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 20px;
-    border-radius: 20px; /* bordi arrotondati*/
+    border-radius: 20px;
 }
 
 .button:hover, button:hover, .button-link:hover {
     background-color: #1F4172;
     color: #F1B4BB;
     font-weight: 700;
-    border-radius: 20px; /* assicurarsi che hover mantenga bordi arrotondati*/
+    border-radius: 20px;
 }
 
 .button-link {
@@ -395,14 +387,14 @@ ul {
     cursor: pointer;
     text-decoration: none;
     margin-top: 20px;
-    border-radius: 20px; /* bordi arrotondati*/
+    border-radius: 20px;
 }
 
 .button-link:hover, button:hover{
     background-color: #1F4172;
     color: #F1B4BB;
     font-weight: 700;
-    border-radius: 20px; /* assicurarsi che hover mantenga bordi arrotondati*/
+    border-radius: 20px;
 }
 
 
@@ -416,7 +408,6 @@ ul {
     line-height: 1.6;
 }
 
-/*responsive sezione about*/
 
 @media (max-width: 480px) {
     .about-section {
@@ -429,7 +420,7 @@ ul {
     .about-main, .skills-container {
         width: 100%;
         margin: 0 auto;
-        padding: 0 15px; /* Aggiungi un po' di padding laterale per non far attaccare il testo ai bordi dello schermo */
+        padding: 0 15px;
     }
 
     .hard-skills, .soft-skills{
@@ -467,37 +458,37 @@ ul {
     }
 
     .soft-skills .skills-list li {
-        margin-bottom: 10px; /* Aumenta lo spazio tra gli elementi dell'elenco delle soft skills */
+        margin-bottom: 10px;
     }
 }
 
 #about {
-    background-color: #f1b4bb37; /* Sostituisci con il colore desiderato */
-    border-radius: 20px; /* Angoli arrotondati. Aumenta o diminuisci questo valore per ottenere l'arrotondamento desiderato */
-    padding: 20px; /* Aggiungi del padding intorno al contenuto per non avere il testo troppo vicino ai bordi */
-    margin: 20px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opzionale: aggiunge un leggero ombreggiamento per elevare la sezione dal resto della pagina */
+    background-color: #f1b4bb37;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 
 #contact {
-    background-color: #1f42725c; /* Sostituisci con il colore desiderato */
-    border-radius: 20px; /* Angoli arrotondati. Aumenta o diminuisci questo valore per ottenere l'arrotondamento desiderato */
-    padding: 20px; /* Aggiungi del padding intorno al contenuto per non avere il testo troppo vicino ai bordi */
-    margin: 5px 0; /* Aggiungi un po' di margine sopra e sotto la sezione per separarla dal contenuto adiacente */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opzionale: aggiunge un leggero ombreggiamento per elevare la sezione dal resto della pagina */
+    background-color: #1f42725c;
+    border-radius: 20px; 
+    padding: 20px;
+    margin: 5px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 80px;
 }
 
 @media (max-width: 480px) {
     #contact {
-        margin: 10px; /* Riduci i margini */
-        padding: 15px; /* Riduci il padding */
+        margin: 10px;
+        padding: 15px;
     }
 }
 
 #portfolio {
-    text-align: center; /* Centra il testo della sezione */
+    text-align: center;
     margin: auto;
     padding: 20px;
     margin-top: 100px;
@@ -506,19 +497,19 @@ ul {
 
 .social-icons {
     display: flex;
-    justify-content: center; /* Centra le icone orizzontalmente */
-    gap: 20px; /* Distanza tra le icone */
-    margin-top: 20px; /* Spazio tra il testo e le icone */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .social-icons a img {
-    width: 50px; /* Imposta la larghezza delle icone */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
+    width: 50px;
+    height: auto;
 }
 
 .social-icons a img[alt="start2impact"] {
-    width: 200px; /* Aumenta la larghezza */
-    height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
+    width: 200px;
+    height: auto;
 }
 
 
@@ -527,8 +518,8 @@ ul {
 }
 
 .portfolio-item p a {
-    text-decoration: none; /* Rimuove il sottolineamento */
-    color: inherit; /* Opzionale: fa sì che il link utilizzi il colore del testo circostante */
+    text-decoration: none;
+    color: inherit;
 }
 
 .portfolio-item {
@@ -590,7 +581,6 @@ ul {
     color: #F1B4BB;
 }
 
-/*Stili per griglia ABOUT*/
 
 .about-section{
     display: flex;
@@ -628,7 +618,6 @@ ul {
     gap: 20px;
 }
 
-/* Aggiunta per il layout delle pagine specifiche */
 
 .portfolio-container {
     display: grid;
@@ -636,11 +625,11 @@ ul {
     border-radius: 20px;;
     gap: 20px;
     padding: 20px;
-    margin-top: 100px; /* Per non sovrapporsi all'header */
-    background-color: rgba(241, 180, 187, 0.311); /* Rosa trasparente */
-    backdrop-filter: blur(10px); /* Effetto sfocatura per il vetro */
-    -webkit-backdrop-filter: blur(10px); /* Per il supporto su Safari */
-    border: 1px solid rgba(255, 255, 255, 0.203); /* Opzionale: bordo per migliorare l'effetto vetro */
+    margin-top: 100px;
+    background-color: rgba(241, 180, 187, 0.311);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.203);
 }
 
 .portfolio-item {
@@ -650,61 +639,56 @@ ul {
     text-align: center;
 }
 .portfolio-item p {
-    font-family: 'Merriweather', serif; /* Imposta Merriweather come font */
-    font-size: 16px; /*dimensione predefinita del testo*/
-    margin: 10px 0; /*margine sopra e sotto per separare il testo dalle immagini*/
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin: 10px 0;
 }
 @media (max-width: 480px) {
     .portfolio-item p {
-        font-size: 12px; /* Riduce la dimensione del testo sui dispositivi più piccoli */
-        margin: 8px 0; /* Riduce il margine sopra e sotto per evitare la compattazione */
+        font-size: 12px;
+        margin: 8px 0;
     }
 }
 
 @media (max-width: 480px) {
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonne per dispositivi più piccoli */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Assicurati che gli elementi del portfolio siano responsive e non si accavallino */
 .portfolio-item {
-    margin-bottom: 20px; /* Aggiunge spazio sotto ogni elemento */
+    margin-bottom: 20px;
 }
 
 .portfolio-item img {
-    max-width: 100%; /* Assicura che le immagini non superino la larghezza del contenitore */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-width: 100%;
+    height: auto;
 }
 
-/* Aggiusta la dimensione del testo nei progetti per dispositivi più piccoli, se necessario */
+
 @media (max-width: 480px) {
     .portfolio-item p {
-        font-size: smaller; /* Riduci la dimensione del testo sui dispositivi più piccoli per evitare accavallamenti */
+        font-size: smaller;
     }
 }
 
 
-/* Stili specifici per la pagina Contact */
-
-/* Assicurati che il form e tutti i suoi campi siano disposti in colonna */
 form.content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Allinea gli elementi a sinistra */
+    align-items: flex-start;
 }
 
-/* Stile per i campi input e textarea per garantire che occupino l'intera larghezza disponibile */
 form.content input,
 form.content textarea {
-    width: 100%; /* Imposta la larghezza al 100% del contenitore del form */
-    margin-bottom: 10px; /* Aggiunge un po' di margine sotto ogni campo per spaziarli */
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-/* Assicurati che il bottone non sia allargato come gli input/textarea */
+
 form.content button {
-    width: auto; /* O un valore specifico se preferisci */
-    margin-top: 20px; /* Aggiunge spazio sopra il bottone */
+    width: auto;
+    margin-top: 20px;
 }
 
 
@@ -718,9 +702,9 @@ form.content button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%; /* Regola questa larghezza secondo necessità */
+    width: 80%;
     margin-bottom: 20px;
-    margin: 0 auto; /* Centra il form */
+    margin: 0 auto;
 }
 
 .contact-form label{
@@ -753,15 +737,15 @@ form.content button {
 
 @media (max-width: 480px) {
     .form-field {
-        width: 100%; /* Usa la larghezza intera su dispositivi mobili */
-        padding: 0 30px; /* Aggiunge un po' di spazio ai lati */
+        width: 100%;
+        padding: 0 30px;
     }
 }
 
 @media (max-width: 480px) {
     #contact {
-        background-color: transparent; /* Rendi lo sfondo trasparente */
-        box-shadow: none; /* Rimuovi l'ombra per mantenere coerenza visiva */
+        background-color: transparent;
+        box-shadow: none;
     }
 }
 
@@ -781,12 +765,12 @@ form.content button {
     position: fixed;
     bottom: 24px;
     right: 24px;
-    background-color: #F1B4BB; /* Colore di sfondo */
-    color: #FFFFFF; /* Colore della freccia */
-    padding: 15px; /* Spazio intorno alla freccia */
-    border-radius: 40%; /* Rende il bottone circolare */
-    text-decoration: none; /* Rimuove il sottolineato dal link */
-    font-size: 32px; /* Dimensione della freccia */
-    display: none; /* Nasconde il bottone di default */
+    background-color: #F1B4BB;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 40%;
+    text-decoration: none;
+    font-size: 32px;
+    display: none;
     z-index: 1500;
 }
