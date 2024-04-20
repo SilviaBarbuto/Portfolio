@@ -799,7 +799,7 @@ main {
 
 .esperienze-lavorative{
     margin-left: 50px;
-    margin-top: -60px;
+    margin-top: -90px;
 }
 
 .download-cv {
@@ -837,42 +837,6 @@ main {
     font-size: 20px;
 }
 
-.breadcrumb {
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    list-style: none;
-    background-color: #f8f9fa;
-    border-radius: .25rem;
-    margin-left:10px;
-}
-
-.breadcrumb-item {
-    display: inline;
-}
-
-.breadcrumb-item a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    content: ">";
-    padding: 0 5px;
-    color: #6c757d;
-}
-
-.breadcrumb-item.active a {
-    color: #6c757d;
-    pointer-events: none;
-    cursor: default;
-}
-
-.breadcrumb-item a:hover {
-    text-decoration: underline;
-    color: #0056b3;
-}
-
-
 @media (max-width: 480px) {
     .content-container {
         flex-direction: column;
@@ -905,10 +869,6 @@ main {
 
     .citazione{
         text-align: center;
-    }
-
-    .breadcrumb {
-        display: none;
     }
 }
 
