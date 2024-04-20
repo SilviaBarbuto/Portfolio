@@ -804,7 +804,7 @@ main {
 
 .download-cv {
     text-align: left; 
-    margin-top: 20px;
+    margin-top: -60px;
     margin-left: 20px;
     margin-bottom: -300px;
 }
@@ -831,6 +831,10 @@ main {
     font-size: 20px;
     line-height: 2;
 
+}
+
+#visiona-cv{
+    font-size: 20px;
 }
 
 .breadcrumb {
