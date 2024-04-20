@@ -780,6 +780,7 @@ main {
     margin: auto;
     margin-top: -450px;
     padding: 20px;
+    overflow: hidden;
 }
 
 .content-container {
@@ -863,8 +864,6 @@ main {
         margin-left: 20px;
         margin-top: 50px;
         white-space: nowrap;
-        overflow: hidden; 
-        width: auto;
     }
 
     .citazione{
