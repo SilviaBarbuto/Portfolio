@@ -774,3 +774,135 @@ form.content button {
     display: none;
     z-index: 1500;
 }
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: -450px;
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.esperienze-lavorative, .studi {
+    flex: 1;
+}
+
+.studi{
+    margin-top: 10px;
+}
+
+
+.esperienze-lavorative{
+    margin-left: 50px;
+    margin-top: -60px;
+}
+
+.download-cv {
+    text-align: left; 
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -300px;
+}
+
+.citazione{
+    margin-top: 80px;
+    text-align: justify;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+}
+
+.esperienze-professionali{
+    background-color: rgba(241, 180, 187, 0.163);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+#esperienze-lavorative {
+    font-size: 20px;
+    line-height: 2;
+
+}
+
+.breadcrumb {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f8f9fa;
+    border-radius: .25rem;
+    margin-left:10px;
+}
+
+.breadcrumb-item {
+    display: inline;
+}
+
+.breadcrumb-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding: 0 5px;
+    color: #6c757d;
+}
+
+.breadcrumb-item.active a {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+
+@media (max-width: 480px) {
+    .content-container {
+        flex-direction: column;
+}
+    .esperienze-professionali{
+        margin-top: 100px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .esperienze-lavorative, .studi{
+       flex-direction: column;
+    }
+
+    .esperienze-lavorative{
+        text-align: center;
+        margin-right:30px;
+        margin-left:30px;
+        margin-top: 10px;
+    }
+
+    .download-cv{
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .citazione{
+        text-align: center;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+}
+
+
