@@ -791,6 +791,7 @@ main {
 
 .esperienze-lavorative, .studi {
     flex: 1;
+    line-height: 1.5;
 }
 
 .studi{
@@ -800,7 +801,7 @@ main {
 
 .esperienze-lavorative{
     margin-left: 50px;
-    margin-top: -90px;
+    margin-top: -20px;
 }
 
 .download-cv {
@@ -830,7 +831,6 @@ main {
 
 #esperienze-lavorative {
     font-size: 20px;
-    line-height: 2;
 
 }
 
