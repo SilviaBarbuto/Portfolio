@@ -191,6 +191,7 @@ nav ul li a:hover {
 
 .button-link:first-of-type {
     margin-right: 40px;
+    margin-left: 1px;
 }
 
 
